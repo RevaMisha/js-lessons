@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 18</title>
+    
+</head>
+<body>
+    <h1>Урок №18</h1>
+    
+    <h2>Задача 1.</h2>
+    <p>Розробити калькулятор</p>
+    
+    <div class="calculator">
+      <div> 
+      <lable> 
+      First Namber
+      <input id="onenum" type="number" name"value">
+      </lable> 
+      </div>
+      
+      <div> 
+      <lable> 
+       Second Namber
+      <input id = "secondnum" type="number" name"value">
+      </lable>  
+    </div> 
+    
+    <div class="btns"> 
+      <button class="btn-plus" onclick="plusEls()">Додати</button>
+      <button class="btn-minuse" onclick="minusEls()">Відняти</button>
+      <button class="btn-mult" onclick="multEls()">Помножити</button>
+      <button class="btn-div" onclick="divisEls()">Поділити</button>
+    </div>
+
+    <hr>
+      
+    <p>Результат</p>
+      <input id ="res" type="number" name"value" >
+   </div>
+
+   <h2>Задача 2.</h2> 
+    <p>Зробити конвертер валют (курси валют – константи у скрипті)</p>
+    <div class="kantor">
+        <lable>
+            Сума в гривнях 
+            <input id="grv" type="number" name"value">
+        </lable>
+        <div> 
+        <button onclick="moneyConvertor()">Конвертувати</button>
+        </div>
+        <hr>
+       
+        <div> 
+        <label>
+            Сума в Евро
+            <input id="evro" type="number" name"value">
+        </label>
+        </div>
+   
+        <div> 
+        <label>
+            Сума в Доларах
+            <input id="dol" type="number" name"value">
+        </label>
+        </div>
+
+        
+
+    </div>
+
+    
+    <h2>Задача 3.</h2>
+    <p>Користувач задає рік народження. Визначити кількість років користувача.</p>
+    
+    
+    <div class = "personAge">
+
+        <lable>
+            Введіть ваш pік народження 
+            <input id = "birthday" type="number" name"value">
+
+        </lable>
+        <button onclick="getAgeHuman()">Визначити вік</button>
+        
+        <div> 
+        <lable>
+            Станом на 2024 вам років 
+            <input id = "age" type="number" name"value">
+
+        </lable>
+        </div>
+    </div>
+
+    <h2>Задача 4.</h2>
+    <p>Наперед задано у скрипті масив зі списком бажань. 
+     Після завантаження сторінки випадковим чином вибираються 
+     3 і відображаються у окремих div (їх треба створити і додати на сторінку)
+    </p>
+
+    <div id="object">
+
+    </div>
+
+    <h2>Задача 5.</h2>
+    <p> Відобразити таблицю 3*4 з випадковими числами 
+    (її треба динамічно створити і вставити на сторінку)</p>
+    
+    <di id = "tab"></di>
+
+    <h2> Задача 7.</h2>
+    <p>Подорож складається з 3 етапів. На кожному етапі користувач може вибрати <br>
+    один з видів транспорту (авто, автобус, літак - випадаючий список), харчування <br>
+    (сніданок, обід, вечеря – checkbоx) та одного з 3-х гідів(використати  - radio buttons).<br>
+    Ціни визначте самі. Підрахувати загальну вартість.<br> </p>
+
+    <div class="trevel">
+        <h3>Чим бажаєте подорожувати</h3>
+        Тип транспорту
+        <select>
+            <option value="180">Автомобілем</option>
+            <option value="70">Автобусом</option>
+            <option value="300">Літаком</option>
+        </select>
+        <div> 
+        <h3> Оберіть спосіб харчування </h3>
+        <input type="checkbox" value="10">
+        <label>Сніданок</label>
+        <input type="checkbox" value="15">
+        <label>Обід</label>
+        <input type="checkbox" value="7">
+        <lable>Вечеря</lable>
+        </div>
+
+        <div>
+            <h3>Оберіть свого гіда</h3>
+            <input type="radio" name="group" value="30">
+            <lable>Олег</lable>
+            <input type="radio" name="group" value="25">
+            <lable>Ігор</lable>
+            <input type="radio" name="group" value="40">
+            <lable>Петро</lable>
+
+        </div>
+
+        
+
+        <div>
+            
+            <h3> Загальна вартість обраних посдуг</h3>
+            <button onclick="getTravelSum()">Ціна обраних послуг</button>
+            <input type="number" id="allsum">
+
+        </div>
+    </div>
+    
+</body>
+<script src="js/script.js"></script>
+</html>
